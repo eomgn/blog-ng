@@ -1,13 +1,10 @@
 <div class="container__small-card">
   <div class="container__small-card-content">
     <div class="small-card__photo">
-      <img
-        src="https://files.tecnoblog.net/wp-content/uploads/2021/05/ordem-das-series-da-dc-e1621635252635-700x394.jpeg"
-        alt=""
-      />
+      <img [src]="photoCover" alt="Imagem do filme" />
     </div>
     <div class="small-card__title">
-      <a href="#">saiu a nova versão do Angular</a>
+      <a [routerLink]="['content', id]">{{ cardTitle }}</a>
     </div>
   </div>
 
